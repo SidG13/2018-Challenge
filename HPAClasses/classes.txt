@@ -1,0 +1,26 @@
+Enzymes
+Voltage-gated ion channels
+Predicted secreted proteins
+FDA approved drug targets
+Potential drug targets
+Candidate cardiovascular disease genes
+RAS pathway related proteins
+Predicted intracellular proteins
+Disease related genes
+Cancer-related genes
+Predicted secreted proteins
+Predicted membrane proteins
+Citric acid cycle related proteins
+CD markers
+Predicted membrane proteins
+RNA polymerase related proteins
+G-protein coupled receptors
+Predicted intracellular proteins
+Transcription factors
+Transporters
+Nuclear receptors
+RAS pathway related proteins
+Ribosomal proteins
+Plasma proteins
+Transporters
+NA
