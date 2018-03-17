@@ -1,11 +1,13 @@
 import csv
 items = []
-with open('ClassCombinations.csv', 'rb') as file:
+with open('ClassCombinations.csv', 'r') as file:
     for row in file:
-        item = row.decode('utf-8').replace('\"', '').replace("\n", '')
+        item = row.replace('\"', '').replace("\n", '')
         items += item.split(', ')
+for item in items:
+    item.strip()
 items = list(set(items))
-with open('classes.txt', 'wb') as file:
+with open('classes.txt', 'w') as file:
     for item in items:
-        file.write(item.encode('utf-8'))
-        file.write('\n'.encode('utf-8'))
+        file.write(item)
+        file.write("\n")
