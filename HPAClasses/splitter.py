@@ -1,4 +1,3 @@
-import csv
 items = []
 with open('ClassCombinations.csv', 'r') as file:
     for row in file:
@@ -7,6 +6,7 @@ with open('ClassCombinations.csv', 'r') as file:
 for item in items:
     item.strip()
 items = list(set(items))
+items.sort()
 with open('classes.txt', 'w') as file:
     for item in items:
         file.write(item)
