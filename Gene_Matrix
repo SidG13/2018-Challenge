@@ -1,0 +1,18 @@
+import json
+data = json.load(open('data.json'))
+
+list_of_categories = list(data.keys())
+list_of_genes = list(data.values())
+flat_list = [item for sublist in list_of_genes for item in sublist]
+set_of_genes = set(flat_list)
+set(list(set_of_genes))
+
+w, h = len(list_of_categories)+1, len(list_of_genes)
+Matrix = [[0 for x in range(w)] for y in range(h)]
+Matrix[0] = [0]+list_of_categories
+for item in Matrix:
+    for i in list_of_genes:
+        item[0] = i
+
+for item in Matrix:
+    print(item)
